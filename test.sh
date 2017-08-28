@@ -1,7 +1,10 @@
 #!/bin/bash
+let i=0
 while true
 do
-date -u ‘%Y.%m.%d +1s’
+let i++
+echo $i >>./README.md 
+date -u ‘%Y.%m.%d +1s’>>./README.md
 echo >>  ./README.md
  
 git add .
