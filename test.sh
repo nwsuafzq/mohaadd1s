@@ -3,8 +3,9 @@ let i=0
 while true
 do
 let i++
+echo>>./README.ms
 echo $i >>./README.md 
-date -u ‘%Y.%m.%d +1s’>>./README.md
+date -u ‘+%Y.%m.%d +1s’>>./README.md
 echo >>  ./README.md
  
 git add .
